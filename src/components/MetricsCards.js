@@ -24,7 +24,7 @@ export const MetricsCards = ({ filteredData }) => {
       <Grid item xs={12} md={3}>
         <Box p={2} bgcolor="#f0f0f0" borderRadius="4px">
           <Typography variant="body1">Total Mailed:</Typography>
-          <Typography variant="h6">{totalSums.mailed}</Typography>
+          <Typography variant="h6">{totalSums.mailed.toFixed(2)}</Typography>
         </Box>
       </Grid>
       <Grid item xs={12} md={3}>

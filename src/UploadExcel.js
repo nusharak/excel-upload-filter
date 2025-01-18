@@ -63,6 +63,8 @@ const UploadExcel = () => {
   return (
     <div>
       <Grid container spacing={2}>
+        {(excelData.length===0)?
+        <>
         <Grid item xs={12}>
           <Typography variant="h6">Upload Excel File</Typography>
         </Grid>
@@ -76,7 +78,11 @@ const UploadExcel = () => {
           <Button variant="contained" color="primary" onClick={handleUpload} disabled={loading}>
             {loading ? <CircularProgress size={24} /> : 'Upload'}
           </Button>
-        </Grid>
+        </Grid></>:<Grid item xs={12}>
+          <Button variant="contained" color="primary"  onClick={() => window.location.reload()} >
+            Refresh
+          </Button>
+        </Grid>}
 
         {excelData.length > 0 && (
           <>
