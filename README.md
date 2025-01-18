@@ -4,11 +4,13 @@ Brief description of your project.
 
 ## Features
 - Design a user-friendly interface with filters, tables, and graphs.
+- Allow users to upload Excel files for processing.
+- Ensure filters persist throughout the user session
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nusharak/.git
+   git clone https://github.com/nusharak/excel-upload-filter.git
    ```
 2. Navigate to the project directory:
    ```bash
